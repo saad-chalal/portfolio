@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .about-me {
+            display: flex;
+            align-items: center;
+        }
+        .about-me img {
+            border-radius: 50%;
+            margin-right: 20px;
+            max-width: 150px;
+        }
+        .project {
+            background: #fff;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .project h2 {
+            margin-top: 0;
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .project p {
+            font-size: 1.1em;
+            line-height: 1.6em;
+        }
+        .contact-info {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mon portfolio</h1>
+    </header>
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>À propos de moi</h2>
+            <div class="about-me">
+                <img src="my-face.jpg" alt="Ma photo">
+                <p>Développeur web spécialisé dans la création de sites e-commerce et d'applications web dynamiques, avec une expertise en Django Python et en gestion d'infrastructures cloud sur AWS.</p>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projets</h2>
+            <div class="project">
+                <h2>Projet 1</h2>
+                <img src="p1.png" alt="Projet 1">
+                <p>Création et gestion d'une communauté en ligne axée sur la santé mentale des freelancers, attirant un trafic hebdomadaire de plusieurs millions de visiteurs. Plateforme dédiée à fournir un soutien, des ressources et un espace sécurisé pour discuter des défis liés à la santé mentale dans le milieu freelance, favorisant ainsi le bien-être et l'échange de meilleures pratiques au sein de la communauté.</p>
+            </div>
+            <div class="project">
+                <h2>Projet 2</h2>
+                <img src="p2.png" alt="Projet 2">
+                <p>Lancement et gestion d'un site de commerce électronique spécialisé dans la vente de livres d'histoires pour enfants arabophones résidant à l'étranger. Plateforme dédiée à offrir un accès facile à une sélection variée de livres enrichissants, adaptés à la langue et à la culture arabes, visant à promouvoir la lecture et l'éducation au sein de la communauté diasporique.</p>
+            </div>
+            <div class="project">
+                <h2>Projet 3</h2>
+                <img src="p3.jpeg" alt="Projet 3">
+                <p>Conception et développement d'une plateforme en ligne pour les cabinets médicaux permettant aux clients de réserver des séances directement depuis notre site web. Objectif : optimiser l'efficacité opérationnelle en réduisant les temps d'attente en cabinet grâce à une gestion proactive des rendez-vous en ligne.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Pour me contacter, vous pouvez m'envoyer un message par email à <a href="mailto:chalalsaad160@gmail.com">chalalsaad160@gmail.com</a> ou via <a href="https://www.linkedin.com/in/saad-chalal-668501244/"> Mon LinkedIn</a>.</p>
+                <p>Vous pouvez également me joindre par téléphone au <strong>0691399250</strong>.</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Saad Chalal
+    </footer>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
